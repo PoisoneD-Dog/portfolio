@@ -1,151 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Metadatos básicos -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alexis Palacio | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio profesional de Alexis Palacio, desarrollador Frontend">
+  <title>Alexis Palacio | Frontend Developer</title>
+
+  <!-- Preconexión para mejorar el rendimiento -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <!-- Hojas de estilo -->
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome CDN for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos de Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-  <!-- Header section with navigation links -->
-  <header class="header">
+  <!-- Cabecera con navegación -->
+  <header class="header" id="header">
     <div class="container">
-      <div class="logo">Alexis Palacio</div>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+      <a href="#home" class="logo">Alexis Palacio</a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
       </nav>
+
+      <button class="mobile-menu-btn" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
   </header>
 
-  <!-- About Me section -->
-  <section id="about">
-    <div class="container">
-      <div class="profile">
-        <img src="assets/image/poisoneddog.png" alt="Alexis Palacio" class="profile-img">
-        <h2 class="animate">Alexis Palacio</h2>
-        <p class="animate">Frontend & Backend Developer</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Hero Section with main intro -->
-  <section class="hero">
+  <!-- Sección Hero -->
+  <section class="hero" id="home">
     <div class="container hero-content">
-      <h1 class="animate">Hi, I'm <span>Alexis Palacio</span></h1>
-      <p class="animate">Frontend & Backend Developer | Web Designer | Angular & C# Developer</p>
-      <a href="#contact" class="btn">Hire Me</a>
+      <h1 class="animate fade-in">Hi, I'm <span class="highlight">Alexis Palacio</span></h1>
+      <p class="animate fade-in delay-1">Frontend Developer | Shopify Expert</p>
+      <div class="animate fade-in delay-2">
+        <a href="#contact" class="btn btn-primary">Hire Me</a>
+        <a href="#projects" class="btn btn-secondary">View Work</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator animate bounce">
+      <i class="fas fa-chevron-down"></i>
     </div>
   </section>
 
-  <!-- About Me Text Section -->
-  <section class="about">
+  <!-- Sección Sobre Mí -->
+  <section id="about" class="section about">
     <div class="container">
-      <h2>About Me</h2>
-      <p class="animate">I'm a passionate developer with experience in frontend and backend. I love building web applications and designing intuitive user experiences. I'm currently working on a music portfolio, a Shopify store, and an upcoming browser game.</p>
-    </div>
-  </section>
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Get to know me better</p>
+      </div>
 
-  <!-- Skills section -->
-  <section id="skills" class="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="animate skill-logos">
-        <div class="skill-item">
-          <i class="fab fa-html5"></i>
-          <p>HTML5</p>
+      <div class="about-content">
+        <div class="profile animate slide-in-left">
+          <img src="assets/image/poisoneddog.png" alt="Alexis Palacio" class="profile-img" loading="lazy">
+          <div class="profile-badge">
+            <span>5+ Years Experience</span>
+          </div>
         </div>
-        <div class="skill-item">
-          <i class="fab fa-css3-alt"></i>
-          <p>CSS3</p>
-        </div>
-        <div class="skill-item">
-          <i class="fab fa-js"></i>
-          <p>JavaScript</p>
-        </div>
-        <div class="skill-item">
-          <i class="fab fa-angular"></i>
-          <p>Angular</p>
-        </div>
-        <div class="skill-item">
-          <i class="fab fa-react"></i>
-          <p>React</p>
-        </div>
-        <div class="skill-item">
-          <i class="fab fa-node"></i>
-          <p>Node.js</p>
-        </div>
-        <div class="skill-item">
-          <i class="fab fa-python"></i>
-          <p>Python</p>
-        </div>
-        <div class="skill-item">
-          <i class="fab fa-git-alt"></i>
-          <p>Git</p>
+
+        <div class="about-text animate slide-in-right">
+          <h3>Frontend Specialist</h3>
+          <p>I'm a passionate Frontend Developer with expertise in Shopify. I also have experience with BuilderAll for
+            marketing funnels. I create high-converting, responsive websites with pixel-perfect UI/UX.</p>
+
+          <div class="about-details">
+            <div class="detail-item">
+              <h4>Specialties:</h4>
+              <p>Shopify Themes, JavaScript, Responsive Design</p>
+            </div>
+            <div class="detail-item">
+              <h4>Email:</h4>
+              <p><a href="mailto:alexis26-93@live.com">alexis26-93@live.com</a></p>
+            </div>
+          </div>
+
+          <a href="assets/CV-AlexisPalacio.pdf" class="btn btn-primary" download>Download CV</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects section -->
-  <section id="projects">
+  <!-- Sección de Habilidades -->
+  <section id="skills" class="section skills">
     <div class="container">
-      <h2>My Projects</h2>
-      <div class="project-cards animate">
-        <a href="link-to-your-music" class="project-card">
-          <img src="assets/image/Cara Distorsionada y Colores Neón.png" alt="Music Project">
-          <h3>My Music</h3>
-        </a>
-        <a href="link-to-your-shopify-store" class="project-card">
-          <img src="assets/image/Ojos Felinos Neón en Glitch.png" alt="Shopify Project">
-          <h3>My Shopify Store</h3>
-        </a>
-        <a href="link-to-your-game" class="project-card">
-          <img src="assets/image//Melancolía cibernética en neón.png" alt="Browser Game">
-          <h3>Browser Game</h3>
-        </a>
+      <div class="section-header">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Technologies I work with</p>
       </div>
-    </div>
-  </section>
-  
-  <a href="assets/CV-AlexisPalacio.pdf" class="btn animate" download>Download CV</a>
+
+      <div class="skills-grid animate fade-in">
+        <!-- Habilidades Frontend -->
+        <div class="skill-item" data-tooltip="Advanced">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <p class="skill-name">HTML5</p>
+          <div class="skill-progress">
+            <div class="progress-bar" style="width: 95%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item" data-tooltip="Advanced">
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <p class="skill-name">CSS3</p>
+          <div class="skill-progress">
+            <div class="progress-bar" style="width: 90%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item" data-tooltip="Advanced">
+          <div class="skill-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <p class="skill-name">JavaScript</p>
+          <div class="skill-progress">
+            <div class="progress-bar" style="width: 85%"></div>
+          </div>
+        </div>
+
+        <!-- Ícono de Responsive (NUEVO) -->
+        <div class="skill-item" data-tooltip="Advanced">
+          <div class="skill-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <p class="skill-name">Responsive</p>
+          <div class="skill-progress">
+            <div class="progress-bar" style="width: 72%"></div>
+          </div>
+        </div>
+
+        <!-- Shopify -->
+        <div class="skill-item" data-tooltip="Advanced">
+          <div class="skill-icon">
+            <i class="fab fa-shopify"></i>
+          </div>
+          <p class="skill-name">Shopify</p>
+          <div class="skill-progress">
+            <div class="progress-bar" style="width: 68%"></div>
+          </div>
+        </div>
 
 
 
-  <!-- Contact Section -->
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/alexis-palacio-ortiz-722949204/" target="_blank">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-    <a href="https://github.com/PoisoneD-Dog" target="_blank">
-      <i class="fab fa-github"></i> GitHub
-    </a>
-  </div>
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 Alexis Palacio. All Rights Reserved.</p>
-    </div>
-  </footer>
+        <!-- Liquid (reemplazando React) -->
+        <div class="skill-item" data-tooltip="Advanced">
+          <div class="skill-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <p class="skill-name">Liquid</p>
+          <div class="skill-progress">
+            <div class="progress-bar" style="width: 45%"></div>
+          </div>
+        </div>
+      </div>
 
-  <!-- External JS script -->
-  <script src="scripts.js"></script>
 
-  <!-- Floating Back to Top Button -->
-  <a href="#" class="back-to-top" id="back-to-top">
-    <i class="fas fa-chevron-up"></i> <!-- Up arrow icon -->
-  </a>
 
-  <!-- Button to scroll to top -->
-  <a href="#" class="scroll-to-top">
-    
-  </a>
+      <!-- Sección de Proyectos -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">E-commerce & Frontend Work</p>
+          </div>
+
+          <div class="projects-filter animate fade-in">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="shopify">Shopify</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Proyecto Shopify -->
+            <div class="project-card animate fade-in delay-1" data-category="shopify">
+              <div class="project-img">
+                <img src="assets/image/ganjaprime.png" alt="Shopify Store" loading="lazy">
+                <div class="project-links">
+                  <a href="https://ganjaprime.myshopify.com" class="project-link" target="_blank"
+                    aria-label="View project"><i class="fas fa-eye"></i></a>
+                  <a href="https://github.com/PoisoneD-Dog/ganjadrop-myshopify" class="project-link" target="_blank"
+                    aria-label="View code"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Fashion Shopify Store</h3>
+                <p class="project-description">Custom Shopify theme development with liquid templates and AJAX cart.</p>
+                <div class="project-tags">
+                  <span class="tag">Shopify</span>
+                  <span class="tag">Liquid</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto Frontend (Tu proyecto de música) -->
+            <div class="project-card animate fade-in delay-2" data-category="frontend">
+              <div class="project-img">
+                <img src="assets/image/Cara Distorsionada y Colores Neón.png" alt="Music Portfolio" loading="lazy">
+                <div class="project-links">
+                  <a href="https://poisoneddog.github.io" class="project-link" target="_blank" rel="noopener noreferrer"
+                    aria-label="Live Demo">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                  <a href="https://github.com/PoisoneD-Dog/poisoneddog" class="project-link" target="_blank"
+                    rel="noopener noreferrer" aria-label="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Interactive Music Portfolio</h3>
+                <p class="project-description">Custom audio player with Web Audio API visualizations.</p>
+                <div class="project-tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Web Audio API</span>
+                  <span class="tag">GSAP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Contacto -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">For Shopify projects</p>
+          </div>
+
+          <div class="contact-content">
+            <form class="contact-form animate slide-in-left">
+              <div class="form-group">
+                <input type="text" id="name" name="name" required>
+                <label for="name">Your Name</label>
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Your Email</label>
+              </div>
+
+              <div class="form-group">
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="message">Project Details</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+            <div class="contact-info animate slide-in-right">
+              <h3>Hire Me For</h3>
+              <ul class="expertise-list">
+                <li><i class="fas fa-check"></i> Custom Shopify Themes</li>
+                <li><i class="fas fa-check"></i> Frontend Optimization</li>
+                <li><i class="fas fa-check"></i> E-commerce Solutions</li>
+              </ul>
+
+              <div class="social-links">
+                <a href="https://github.com/PoisoneD-Dog" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/alexis-palacio-ortiz-722949204/" target="_blank"
+                  rel="noopener noreferrer" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pie de página -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-about">
+              <h3>Alexis Palacio</h3>
+              <p>Frontend Developer & Shopify Specialist</p>
+            </div>
+
+            <div class="footer-links">
+              <h3>Services</h3>
+              <ul>
+                <li><a href="#skills">Shopify Development</a></li>
+                <li><a href="#skills">Custom Frontend</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-contact">
+              <h3>Contact</h3>
+              <ul>
+                <li><i class="fas fa-envelope"></i> alexis26-93@live.com</li>
+                <li><i class="fab fa-github"></i> PoisoneD-Dog</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Alexis Palacio. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Scripts -->
+      <script src="scripts.js"></script>
+
+      <!-- External JS script -->
+      <script src="scripts.js"></script>
+
+      <!-- Floating Back to Top Button -->
+      <a href="#" class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i> <!-- Up arrow icon -->
+      </a>
+
+      <!-- Button to scroll to top -->
+      <a href="#" class="scroll-to-top">
+
+      </a>
 
 </body>
+
 </html>
