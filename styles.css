@@ -170,7 +170,7 @@ p {
 .btn-primary:focus {
   background-color: var(--primary-dark);
   box-shadow: var(--shadow-md);
-}lor: white;
+  color: white;
 }
 
 .btn-primary:hover {
@@ -284,6 +284,7 @@ p {
   color: var(--text-color);
   font-size: 1.5rem;
   cursor: pointer;
+  margin-right: 1rem;
 }
 
 /* =============================================
@@ -974,17 +975,20 @@ p {
   max-width: 600px;
 }
 
-.input-field, .textarea-field {
+.input-field,
+.textarea-field {
   width: 100%;
   padding: 0.8rem;
   border-radius: var(--border-radius-md);
   border: 1px solid var(--border-color);
   background-color: var(--light-bg);
   color: var(--text-color);
-  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  transition: border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
 
-.input-field:focus, .textarea-field:focus {
+.input-field:focus,
+.textarea-field:focus {
   border-color: var(--primary-color);
   box-shadow: 0 0 0 3px rgba(0, 170, 255, 0.3);
   outline: none;
