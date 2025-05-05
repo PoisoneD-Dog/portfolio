@@ -22,13 +22,13 @@
   --darker-bg: #0a0a0a;
   --light-bg: #1a1a1a;
   --text-color: #ffffff;
-  --text-muted: #aaaaaa;
+  --text-muted: #cccccc;
   --border-color: #333333;
 
   /* Sombras */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2); /* Usar solo en modals o elementos destacados */
 
   /* Transiciones */
   --transition-fast: 0.2s ease;
@@ -164,7 +164,13 @@ p {
 
 .btn-primary {
   background-color: var(--primary-color);
-  color: white;
+  color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--primary-dark);
+  box-shadow: var(--shadow-md);
+}lor: white;
 }
 
 .btn-primary:hover {
@@ -955,4 +961,36 @@ p {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* =============================================
+   FORMULARIO DE CONTACTO
+   ============================================= */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.input-field, .textarea-field {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-color);
+  background-color: var(--light-bg);
+  color: var(--text-color);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.input-field:focus, .textarea-field:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 170, 255, 0.3);
+  outline: none;
+}
+
+.textarea-field {
+  min-height: 150px;
+  resize: vertical;
 }
