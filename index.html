@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+  <link rel="icon" href="assets/image/favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <!-- Metadatos básicos -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,8 +43,14 @@
         </ul>
       </nav>
 
+
+
       <button class="mobile-menu-btn" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
+        <!-- Cambia esta línea -->
+        <div > <!-- (antes tenía clase "menu-icon") -->
+          <img src="assets/" alt="">
+        </div>
       </button>
     </div>
   </header>
@@ -72,30 +81,33 @@
 
       <div class="about-content">
         <div class="profile animate slide-in-left">
-          <img src="./assets/image/poisoneddog.png" alt="Alexis Palacio" class="profile-img" loading="lazy">
+          <img src="Assets/image/poisoneddog.png" alt="Alexis Palacio" class="profile-img" loading="lazy">
           <div class="profile-badge">
-            <span>5+ Years Experience</span>
+            <span>2+ Years Experience</span>
           </div>
         </div>
 
         <div class="about-text animate slide-in-right">
-          <h3>Frontend Specialist</h3>
-          <p>I'm a passionate Frontend Developer with expertise in Shopify. I also have experience with BuilderAll for
-            marketing funnels. I create high-converting, responsive websites with pixel-perfect UI/UX.</p>
-
+          <h3 data-key="frontend_specialist">Frontend Specialist</h3>
+          <p data-key="about_description">
+            I'm a passionate Frontend Developer with expertise in Shopify. I also have experience with BuilderAll for
+            marketing funnels. I create high-converting, responsive websites with pixel-perfect UI/UX.
+          </p>
+        
           <div class="about-details">
             <div class="detail-item">
-              <h4>Specialties:</h4>
-              <p>Shopify Themes, JavaScript, Responsive Design</p>
+              <h4 data-key="specialties_title">Specialties:</h4>
+              <p data-key="specialties_list">Shopify Themes, JavaScript, Responsive Design</p>
             </div>
             <div class="detail-item">
-              <h4>Email:</h4>
+              <h4 data-key="email_title">Email:</h4>
               <p><a href="mailto:alexis26-93@live.com">alexis26-93@live.com</a></p>
             </div>
           </div>
-
-          <a href="./assets/CV-AlexisPalacio.pdf" class="btn btn-primary" download>Download CV</a>
+        
+          <a id="cv-link" href="#" target="_blank" class="btn btn-primary" data-key="download_cv">Download CV</a>
         </div>
+        
       </div>
     </div>
   </section>
@@ -196,7 +208,7 @@
             <!-- Proyecto Shopify -->
             <div class="project-card animate fade-in delay-1" data-category="shopify">
               <div class="project-img">
-                <img src="./assets/image/ganjaprime.png" alt="Shopify Store" loading="lazy">
+                <img src="assets/image/ganjaprime.png" alt="Shopify Store" loading="lazy">
                 <div class="project-links">
                   <a href="https://ganjaprime.myshopify.com" class="project-link" target="_blank"
                     aria-label="View project"><i class="fas fa-eye"></i></a>
@@ -218,7 +230,7 @@
             <!-- Proyecto Frontend (Tu proyecto de música) -->
             <div class="project-card animate fade-in delay-2" data-category="frontend">
               <div class="project-img">
-                <img src="./assets/ Distorsionada y Colores Neón.png" alt="Music Portfolio" loading="lazy">
+                <img src="Assets/image/Cara Distorsionada y Colores Neón.png" alt="Music Portfolio" loading="lazy">
                 <div class="project-links">
                   <a href="https://poisoneddog.github.io" class="project-link" target="_blank" rel="noopener noreferrer"
                     aria-label="Live Demo">
@@ -249,27 +261,27 @@
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">For Shopify projects</p>
+            <p class="section-subtitle">I'm ready to contribute to your next project</p>
           </div>
 
           <div class="contact-content">
             <form class="contact-form animate slide-in-left">
               <div class="form-group">
                 <input type="text" id="name" name="name" required>
-                <label for="name">Your Name</label>
+                <label for="name">Tu Nombre</label>
               </div>
 
               <div class="form-group">
                 <input type="email" id="email" name="email" required>
-                <label for="email">Your Email</label>
+                <label for="email">Tu Correo</label>
               </div>
 
               <div class="form-group">
                 <textarea id="message" name="message" rows="5" required></textarea>
-                <label for="message">Project Details</label>
+                <label for="message">Detalles del Proyecto</label>
               </div>
 
-              <button type="submit" class="btn btn-primary">Send Message</button>
+              <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
             </form>
 
             <div class="contact-info animate slide-in-right">
@@ -300,7 +312,7 @@
           <div class="footer-content">
             <div class="footer-about">
               <h3>Alexis Palacio</h3>
-              <p>Frontend Developer & Shopify Specialist</p>
+              <p>Alexis Palacio | Frontend Developer | HTML, CSS, JavaScript & Shopify</p>
             </div>
 
             <div class="footer-links">
@@ -341,6 +353,22 @@
       <a href="#" class="scroll-to-top">
 
       </a>
+      <script>
+        const cvLink = document.getElementById("cv-link");
+    
+        function updateCVLink() {
+            const isSpanish = document.documentElement.lang === "es";
+            if (isSpanish) {
+                cvLink.href = "assets/cv/CV-AlexisPalacio-ES.pdf";
+            } else {
+                cvLink.href = "assets/cv/CV-AlexisPalacio-EN.pdf";
+            }
+        }
+    
+        // Ejecutar la función al cargar la página
+        updateCVLink();
+    </script>
+    
 
 </body>
 
