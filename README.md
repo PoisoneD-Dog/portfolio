@@ -1,40 +1,40 @@
-# Poisoned Dog Portfolio
 
-Portfolio profesional de Alexis Palacio (Poisoned Dog), Frontend Developer & Shopify Expert.
+# Portafolio Profesional - Alexis Palacio
 
-## 🔥 Características
+## 🚀 Descripción
+Este es un portafolio web diseñado para presentar mis habilidades como desarrollador Frontend especializado en Shopify, optimización de rendimiento y soluciones e-commerce.
 
-- Diseño responsivo y minimalista con estética glitch.
-- Menú móvil accesible.
-- Traducción dinámica entre Inglés y Español sin recargar la página.
-- Lazy loading en imágenes para mejorar velocidad.
-- SEO básico aplicado (`meta description`, sitemap, robots.txt).
-- Código limpio y optimizado para buen rendimiento.
+El sitio presenta una navegación clara, animaciones ligeras y un formulario de contacto funcional que permite a los potenciales clientes contactarme directamente.
 
-## 🌐 Demo
+## 🛠 Tecnologías usadas
+- HTML5 semántico
+- CSS3 con variables personalizadas y diseño responsive
+- JavaScript ES6 (con IntersectionObserver y mejoras de accesibilidad)
+- Font Awesome (íconos)
+- Google Fonts
+- FormSubmit (para funcionalidad de formulario sin servidor)
+- Git (control de versiones)
 
-[Ver sitio en vivo](https://poisoned-dog.github.io/portfolio/)
+## ✅ Buenas prácticas aplicadas
+- Uso de `DOMContentLoaded` para garantizar que el DOM esté completamente cargado antes de ejecutar scripts.
+- Variables CSS centralizadas para una gestión eficiente de colores, sombras y tamaños.
+- Diseño responsive con `clamp()` y media queries.
+- Accesibilidad: atributos `aria-label`, outline en elementos enfocados y contraste ajustado.
+- Optimización de rendimiento:
+  - `preconnect` a fuentes e íconos.
+  - `loading="lazy"` en todas las imágenes.
+  - Código CSS y JS limpio y organizado.
 
-## 🛠️ Tecnologías
+## 🔎 Decisiones técnicas clave
+- Se utilizó FormSubmit para gestionar el envío de correos desde el formulario sin necesidad de backend propio.
+- Se implementaron animaciones solo cuando el elemento entra en viewport usando Intersection Observer, evitando impacto en el rendimiento por scroll listeners pesados.
+- Mobile-first design para garantizar compatibilidad con pantallas pequeñas.
 
-- HTML5, CSS3
-- JavaScript Vanilla
-- Font Awesome, Google Fonts
+## 🌱 Siguientes mejoras sugeridas
+- Minificación de CSS y JS para entornos de producción.
+- Implementar `apple-touch-icon` y `manifest.json` para mejorar compatibilidad en dispositivos Apple y Android.
+- Considerar integrar Google Analytics o una alternativa privacy-friendly.
+- Agregar soporte para idioma inglés si se espera una audiencia internacional.
 
-## 📄 Estructura del proyecto
-
-- `index.html`: página principal.
-- `styles.css`: estilos personalizados.
-- `scripts.js`: funcionalidades de menú, traducción y scroll.
-- `assets/`: imágenes y favicon.
-- `sitemap.xml` y `robots.txt`: SEO.
-
-## 🚀 Cómo usar
-
-1. Subir todo el contenido a un repositorio GitHub.
-2. Activar GitHub Pages apuntando a la rama `main` o `master`.
-3. Borrar caché del navegador si actualizas cambios.
-
-## ✉ Contacto
-
-[alexis26-93@live.com](mailto:alexis26-93@live.com)
+## 👨‍💻 Nota para entrevistas
+Este portafolio refleja no solo habilidades técnicas en HTML/CSS/JS, sino también enfoque en accesibilidad, rendimiento y buenas prácticas modernas.

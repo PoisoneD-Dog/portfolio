@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // ============================
+  // ----------------------------
   // VARIABLES
-  // ============================
+  // ----------------------------
   const header = document.getElementById("header");
   const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
   const navList = document.querySelector(".nav-list");
@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const cvLink = document.getElementById("cv-link");
   const htmlTag = document.documentElement;
 
-  // ============================
+  // ----------------------------
   // MENÚ MÓVIL
-  // ============================
+  // ----------------------------
   function toggleMobileMenu() {
     navList.classList.toggle("active");
     mobileMenuBtn.setAttribute(
@@ -22,12 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
       navList.classList.contains("active")
     );
 
-    const icon = mobileMenuBtn.querySelector("i");
-    if (navList.classList.contains("active")) {
-      icon.classList.replace("fa-bars", "fa-times");
-    } else {
-      icon.classList.replace("fa-times", "fa-bars");
-    }
+    mobileMenuBtn.classList.toggle("active-icon");
   }
 
   mobileMenuBtn.addEventListener("click", toggleMobileMenu);
@@ -40,9 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // ============================
+  // ----------------------------
   // SCROLL HEADER Y BACK TO TOP
-  // ============================
+  // ----------------------------
   function handleScroll() {
     header.classList.toggle("scrolled", window.scrollY > 100);
     backToTopBtn.classList.toggle("show", window.scrollY > 300);
@@ -51,14 +46,14 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", handleScroll);
   handleScroll(); // Inicial
 
-  // ============================
+  // ----------------------------
   // SCROLL SUAVE
-  // ============================
+  // ----------------------------
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
-      e.preventDefault();
       const targetId = this.getAttribute("href");
       if (targetId !== "#") {
+        e.preventDefault();
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
           const headerHeight = header.offsetHeight;
@@ -73,9 +68,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // ============================
+  // ----------------------------
   // BOTÓN VOLVER ARRIBA
-  // ============================
+  // ----------------------------
   document
     .querySelectorAll(".back-to-top, #back-to-top, .scroll-to-top")
     .forEach((button) => {
@@ -85,9 +80,9 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
-  // ============================
+  // ----------------------------
   // ANIMACIONES CON INTERSECTION OBSERVER
-  // ============================
+  // ----------------------------
   const animateElements = document.querySelectorAll(".animate");
 
   const observer = new IntersectionObserver(
@@ -104,9 +99,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   animateElements.forEach((el) => observer.observe(el));
 
-  // ============================
+  // ----------------------------
   // FILTRADO DE PROYECTOS
-  // ============================
+  // ----------------------------
   projectFilterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       projectFilterBtns.forEach((b) => b.classList.remove("active"));
@@ -122,16 +117,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // ============================
+  // ----------------------------
   // AÑO FOOTER
-  // ============================
+  // ----------------------------
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
   }
 
-  // ============================
+  // ----------------------------
   // MUSIC PLAYER (solo si hay proyecto fullstack)
-  // ============================
+  // ----------------------------
   const musicProjectCard = document.querySelector(
     '.project-card[data-category="fullstack"]'
   );
@@ -151,9 +146,9 @@ document.addEventListener("DOMContentLoaded", function () {
       .prepend(previewContainer);
   }
 
-  // ============================
+  // ----------------------------
   // CAMBIO DE IDIOMA
-  // ============================
+  // ----------------------------
   let idiomaIngles = true;
 
   const textos = {
@@ -244,9 +239,9 @@ document.addEventListener("DOMContentLoaded", function () {
   htmlTag.lang = idiomaIngles ? "en" : "es";
 }
 
-  // ============================
+  // ----------------------------
   // BOTÓN CAMBIO DE IDIOMA
-  // ============================
+  // ----------------------------
   const btnTraducir = document.createElement("button");
   btnTraducir.id = "btn-idioma";
   btnTraducir.innerText = "ES";

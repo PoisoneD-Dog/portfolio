@@ -49,7 +49,7 @@
         <i class="fas fa-bars"></i>
         <!-- Cambia esta línea -->
         <div > <!-- (antes tenía clase "menu-icon") -->
-          <img src="Assets/image/favicon.png" alt="">
+          <img src="Assets/image/favicon.png" alt="" loading="lazy">
         </div>
       </button>
     </div>
@@ -81,7 +81,7 @@
 
       <div class="about-content">
         <div class="profile animate slide-in-left">
-          <img src="Assets/image/poisoneddog.png" alt="Alexis Palacio" class="profile-img" loading="lazy">
+          <img src="Assets/image/poisoneddog.png" alt="Alexis Palacio" class="profile-img" loading="lazy loading="lazy"">
           <div class="profile-badge">
             <span>2+ Years Experience</span>
           </div>
@@ -208,7 +208,7 @@
             <!-- Proyecto Shopify -->
             <div class="project-card animate fade-in delay-1" data-category="shopify">
               <div class="project-img">
-                <img src="Assets/image/ganjadrop.png" alt="Shopify Store" loading="lazy">
+                <img src="Assets/image/ganjadrop.png" alt="Shopify Store" loading="lazy loading="lazy"">
                 <div class="project-links">
                   <a href="https://ganjaprime.myshopify.com" class="project-link" target="_blank"
                     aria-label="View project"><i class="fas fa-eye"></i></a>
@@ -230,7 +230,7 @@
             <!-- Proyecto Frontend (Tu proyecto de música) -->
             <div class="project-card animate fade-in delay-2" data-category="frontend">
               <div class="project-img">
-                <img src="Assets/image/Cara Distorsionada y Colores Neón.png" alt="Music Portfolio" loading="lazy">
+                <img src="Assets/image/Cara Distorsionada y Colores Neón.png" alt="Music Portfolio" loading="lazy loading="lazy"">
                 <div class="project-links">
                   <a href="https://poisoneddog.github.io" class="project-link" target="_blank" rel="noopener noreferrer"
                     aria-label="Live Demo">
@@ -265,24 +265,19 @@
           </div>
 
           <div class="contact-content">
-            <form class="contact-form animate slide-in-left">
-              <div class="form-group">
-                <input type="text" id="name" name="name" required>
-                <label for="name">Tu Nombre</label>
-              </div>
+            
 
-              <div class="form-group">
-                <input type="email" id="email" name="email" required>
-                <label for="email">Tu Correo</label>
-              </div>
+<form action="https://formsubmit.co/alexis26-93@live.com" method="POST" class="contact-form">
+  <input type="text" name="name" placeholder="Name" required class="input-field">
+  <input type="email" name="email" placeholder="Email" required class="input-field">
+  <textarea name="message" placeholder="Message" required class="textarea-field"></textarea>
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://PoisoneD-Dog.github.io/portfolio/">
 
-              <div class="form-group">
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <label for="message">Detalles del Proyecto</label>
-              </div>
+  <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+</form>
 
-              <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-            </form>
+    
 
             <div class="contact-info animate slide-in-right">
               <h3>Hire Me For</h3>
