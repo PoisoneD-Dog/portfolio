@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const textos = {
     en: {
       h1: `Hi, I'm <span class='highlight'>Alexis Palacio</span>`,
-      pHero: "Frontend Developer | Shopify Expert",
+      pHero: "Frontend Developer | HTML, CSS, JavaScript & Shopify",
       btn1: "Hire Me",
       btn2: "View Work",
       aboutTitle: "About Me",
@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const keys = {
     en: {
       frontend_specialist: "Frontend Specialist",
-      about_description: "I'm a passionate Frontend Developer with expertise in Shopify. I also have experience with BuilderAll for marketing funnels. I create high-converting, responsive websites with pixel-perfect UI/UX.",
+      about_description: "I’m a frontend developer with skills in HTML, CSS, JavaScript, and responsive web design. I’m currently broadening my expertise by exploring Shopify and other tools to create modern and functional web experiences.",
       specialties_title: "Specialties:",
       specialties_list: "Shopify Themes, JavaScript, Responsive Design",
       email_title: "Email:",
@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     es: {
       frontend_specialist: "Especialista Frontend",
-      about_description: "Soy un desarrollador frontend apasionado con experiencia en Shopify. También tengo experiencia con BuilderAll para embudos de marketing. Creo sitios web receptivos y de alta conversión con UI/UX de píxeles perfectos.",
+      about_description: "Soy un desarrollador frontend con conocimientos en HTML, CSS, JavaScript y diseño web responsivo. Actualmente amplío mis habilidades explorando Shopify y otras herramientas para crear experiencias web modernas y funcionales.",
       specialties_title: "Especialidades:",
       specialties_list: "Temas de Shopify, JavaScript, Diseño Responsive",
       email_title: "Correo:",
