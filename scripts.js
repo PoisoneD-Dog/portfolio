@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const yearElement = document.getElementById("year");
   const cvLink = document.getElementById("cv-link");
   const htmlTag = document.documentElement;
+  const esButton = document.getElementById("es-flag");
+  const enButton = document.getElementById("en-flag");
+
 
   // ----------------------------
   // MENÚ MÓVIL
@@ -260,6 +263,15 @@ document.addEventListener("DOMContentLoaded", function () {
   btnTraducir.addEventListener("click", () => {
     traducirSitio();
     btnTraducir.innerText = idiomaIngles ? "ES" : "EN";
+  });
+  
+
+  esButton.addEventListener("click", () => {
+    localStorage.setItem("idioma", "es");
+  });
+  
+  enButton.addEventListener("click", () => {
+    localStorage.setItem("idioma", "en");
   });
 
   document.body.appendChild(btnTraducir);

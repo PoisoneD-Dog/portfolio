@@ -33,6 +33,10 @@
   <header class="header" id="header">
     <div class="container">
       <a href="#home" class="logo">Alexis Palacio</a>
+      <div class="language-switcher">
+        <img id="es-flag" style="cursor:pointer; width: 32px;">
+        <img id="en-flag" style="cursor:pointer; width: 32px;">
+      </div>
 
       <nav class="nav" aria-label="Main navigation">
         <ul class="nav-list">
@@ -48,11 +52,13 @@
       <button class="mobile-menu-btn" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
         <!-- Cambia esta línea -->
-        <div > <!-- (antes tenía clase "menu-icon") -->
+        <div> <!-- (antes tenía clase "menu-icon") -->
           <img src="Assets/image/favicon.png" alt="" loading="lazy">
         </div>
       </button>
     </div>
+
+
   </header>
 
   <!-- Sección Hero -->
@@ -81,7 +87,8 @@
 
       <div class="about-content">
         <div class="profile animate slide-in-left">
-          <img src="Assets/image/poisoneddog.png" alt="Alexis Palacio" class="profile-img" loading="lazy loading="lazy"">
+          <img src="Assets/image/poisoneddog.png" alt="Alexis Palacio" class="profile-img" loading="lazy loading="
+            lazy"">
           <div class="profile-badge">
             <span>2+ Years Experience</span>
           </div>
@@ -93,7 +100,7 @@
             I'm a passionate Frontend Developer with expertise in Shopify. I also have experience with BuilderAll for
             marketing funnels. I create high-converting, responsive websites with pixel-perfect UI/UX.
           </p>
-        
+
           <div class="about-details">
             <div class="detail-item">
               <h4 data-key="specialties_title">Specialties:</h4>
@@ -104,10 +111,10 @@
               <p><a href="mailto:alexis26-93@live.com">alexis26-93@live.com</a></p>
             </div>
           </div>
-        
+
           <a id="cv-link" href="#" target="_blank" class="btn btn-primary" data-key="download_cv">Download CV</a>
         </div>
-        
+
       </div>
     </div>
   </section>
@@ -208,7 +215,7 @@
             <!-- Proyecto Shopify -->
             <div class="project-card animate fade-in delay-1" data-category="shopify">
               <div class="project-img">
-                <img src="Assets/image/ganjadrop.png" alt="Shopify Store" loading="lazy loading="lazy"">
+                <img src="Assets/image/ganjadrop.png" alt="Shopify Store" loading="lazy loading=" lazy"">
                 <div class="project-links">
                   <a href="https://ganjaprime.myshopify.com" class="project-link" target="_blank"
                     aria-label="View project"><i class="fas fa-eye"></i></a>
@@ -230,7 +237,8 @@
             <!-- Proyecto Frontend (Tu proyecto de música) -->
             <div class="project-card animate fade-in delay-2" data-category="frontend">
               <div class="project-img">
-                <img src="Assets/image/Cara Distorsionada y Colores Neón.png" alt="Music Portfolio" loading="lazy loading="lazy"">
+                <img src="Assets/image/Cara Distorsionada y Colores Neón.png" alt="Music Portfolio"
+                  loading="lazy loading=" lazy"">
                 <div class="project-links">
                   <a href="https://poisoneddog.github.io" class="project-link" target="_blank" rel="noopener noreferrer"
                     aria-label="Live Demo">
@@ -265,19 +273,19 @@
           </div>
 
           <div class="contact-content">
-            
 
-<form action="https://formsubmit.co/alexis26-93@live.com" method="POST" class="contact-form">
-  <input type="text" name="name" placeholder="Name" required class="input-field">
-  <input type="email" name="email" placeholder="Email" required class="input-field">
-  <textarea name="message" placeholder="Message" required class="textarea-field"></textarea>
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://PoisoneD-Dog.github.io/portfolio/gracias.html">
 
-  <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-</form>
+            <form action="https://formsubmit.co/alexis26-93@live.com" method="POST" class="contact-form">
+              <input type="text" name="name" placeholder="Name" required class="input-field">
+              <input type="email" name="email" placeholder="Email" required class="input-field">
+              <textarea name="message" placeholder="Message" required class="textarea-field"></textarea>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://PoisoneD-Dog.github.io/portfolio/gracias.html">
 
-    
+              <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+
+
 
             <div class="contact-info animate slide-in-right">
               <h3>Hire Me For</h3>
@@ -350,20 +358,21 @@
       </a>
       <script>
         const cvLink = document.getElementById("cv-link");
-    
+
         function updateCVLink() {
-            const isSpanish = document.documentElement.lang === "es";
-            if (isSpanish) {
-                cvLink.href = "Assets/cv/CV-AlexisPalacio-ES.pdf";
-            } else {
-                cvLink.href = "Assets/cv/CV-AlexisPalacio-EN.pdf";
-            }
+          const isSpanish = document.documentElement.lang === "es";
+          if (isSpanish) {
+            cvLink.href = "/portfolio/Assets/cv/CV-AlexisPalacio-ES.pdf";
+          } else {
+            cvLink.href = "/portfolio/Assets/cv/CV-AlexisPalacio-EN.pdf";
+
+          }
         }
-    
+
         // Ejecutar la función al cargar la página
         updateCVLink();
-    </script>
-    
+      </script>
+
 
 </body>
 
