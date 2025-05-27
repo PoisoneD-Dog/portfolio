@@ -24,8 +24,6 @@
   <!-- Iconos de Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Favicon -->
-  <link rel="icon" href="assets/image/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -49,9 +47,9 @@
 
 
 
-      <button class="mobile-menu-btn" aria-label="Toggle navigation">
+      <!-- <button class="mobile-menu-btn" aria-label="Toggle navigation">
         
-      </button>
+      </button> -->
     </div>
 
 
@@ -85,10 +83,9 @@
 
       <div class="about-content">
         <div class="profile animate slide-in-left">
-          <img src="assets/image/poisoneddog.png" alt="Alexis Palacio" class="profile-img" loading="lazy loading="
-            lazy"">
+          <img src="assets/image/poisoneddog.png" alt="Alexis Palacio" class="profile-img" loading="lazy">
           <div class="profile-badge">
-            <span>2+ Years Experience</span>
+            <span>4+ Years Experience</span>
           </div>
         </div>
 
@@ -181,7 +178,7 @@
 
 
 
-        <!-- Liquid (reemplazando React) -->
+        <!-- Liquid -->
         <div class="skill-item" data-tooltip="Advanced">
           <div class="skill-icon">
             <i class="fas fa-code"></i>
@@ -191,184 +188,271 @@
             <div class="progress-bar" style="width: 45%"></div>
           </div>
         </div>
+        <!-- END skills-grid -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Proyectos -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">E-commerce & Frontend Work</p>
       </div>
 
+      <div class="projects-filter animate fade-in">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="shopify">Shopify</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+      </div>
 
+      <div class="projects-grid">
+       
 
-      <!-- Sección de Proyectos -->
-      <section id="projects" class="section projects">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">My Projects</h2>
-            <p class="section-subtitle">E-commerce & Frontend Work</p>
-          </div>
-
-          <div class="projects-filter animate fade-in">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="shopify">Shopify</button>
-            <button class="filter-btn" data-filter="frontend">Frontend</button>
-          </div>
-
-          <div class="projects-grid">
-            <!-- Proyecto Shopify -->
-            <div class="project-card animate fade-in delay-1" data-category="shopify">
-              <div class="project-img">
-                <img src="assets/image/ganjadrop.png" alt="Shopify Store" loading="lazy loading=" lazy"">
-                <div class="project-links">
-                  <a href="https://ganjaprime.myshopify.com" class="project-link" target="_blank"
-                    aria-label="View project"><i class="fas fa-eye"></i></a>
-                  <a href="https://github.com/PoisoneD-Dog/ganjadrop-myshopify" class="project-link" target="_blank"
-                    aria-label="View code"><i class="fab fa-github"></i></a>
-                </div>
-              </div>
-              <div class="project-info">
-                <h3 class="project-title">Fashion Shopify Store</h3>
-                <p class="project-description">Custom Shopify theme development with liquid templates and AJAX cart.</p>
-                <div class="project-tags">
-                  <span class="tag">Shopify</span>
-                  <span class="tag">Liquid</span>
-                  <span class="tag">JavaScript</span>
-                </div>
-              </div>
+        <!-- Proyecto Frontend (Tu proyecto de música) -->
+        <div class="project-card animate fade-in delay-2" data-category="frontend">
+          <div class="project-img">
+            <img src="assets/image/Cara Distorsionada y Colores Neón.png" alt="Music Portfolio" loading="lazy">
+            <div class="project-links">
+              <a href="https://poisoned-dog.github.io/poisoneddog/" class="project-link" target="_blank"
+                rel="noopener noreferrer" aria-label="Live Demo">
+                <i class="fas fa-eye"></i>
+              </a>
+              <a href="https://github.com/PoisoneD-Dog/poisoneddog" class="project-link" target="_blank"
+                rel="noopener noreferrer" aria-label="View Code">
+                <i class="fab fa-github"></i>
+              </a>
             </div>
-
-            <!-- Proyecto Frontend (Tu proyecto de música) -->
-            <div class="project-card animate fade-in delay-2" data-category="frontend">
-              <div class="project-img">
-                <img src="assets/image/Cara Distorsionada y Colores Neón.png" alt="Music Portfolio" loading="lazy">
-                <div class="project-links">
-                  <a href="https://poisoned-dog.github.io/poisoneddog/" class="project-link" target="_blank" rel="noopener noreferrer"
-                    aria-label="Live Demo">
-                    <i class="fas fa-eye"></i>
-                  </a>
-                  <a href="https://github.com/PoisoneD-Dog/poisoneddog" class="project-link" target="_blank"
-                    rel="noopener noreferrer" aria-label="View Code">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="project-info">
-                <h3 class="project-title">Interactive Music Portfolio</h3>
-                <p class="project-description">Custom audio player with Web Audio API visualizations.</p>
-                <div class="project-tags">
-                  <span class="tag">JavaScript</span>
-                  <span class="tag">Web Audio API</span>
-                  <span class="tag">GSAP</span>
-                </div>
-              </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Interactive Music Portfolio</h3>
+            <p class="project-description">Custom audio player with Web Audio API visualizations.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Web Audio API</span>
+              <span class="tag">GSAP</span>
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- Sección de Contacto -->
-      <section id="contact" class="section contact">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">I'm ready to contribute to your next project</p>
+        <!-- Proyecto Frontend (Prueba Técnica) -->
+        <div class="project-card animate fade-in delay-2" data-category="frontend">
+          <div class="project-img">
+            <img src="assets/image/tests.jpg" alt="Technical Test Project" loading="lazy">
+            <div class="project-links">
+              <a href="https://technical-test-red-five.vercel.app/" class="project-link" target="_blank"
+                rel="noopener noreferrer" aria-label="Live Demo">
+                <i class="fas fa-eye"></i>
+              </a>
+              <a href="https://github.com/PoisoneD-Dog/technical-test" class="project-link" target="_blank"
+                rel="noopener noreferrer" aria-label="View Code">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
           </div>
-
-          <div class="contact-content">
-
-
-            <form action="https://formsubmit.co/alexis26-93@live.com" method="POST" class="contact-form">
-              <input type="text" name="name" placeholder="Name" required class="input-field">
-              <input type="email" name="email" placeholder="Email" required class="input-field">
-              <textarea name="message" placeholder="Message" required class="textarea-field"></textarea>
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="https://PoisoneD-Dog.github.io/portfolio/gracias.html">
-
-              <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-            </form>
-
-
-
-            <div class="contact-info animate slide-in-right">
-              <h3>Hire Me For</h3>
-              <ul class="expertise-list">
-                <li><i class="fas fa-check"></i> Custom Shopify Themes</li>
-                <li><i class="fas fa-check"></i> Frontend Optimization</li>
-                <li><i class="fas fa-check"></i> E-commerce Solutions</li>
-              </ul>
-
-              <div class="social-links">
-                <a href="https://github.com/PoisoneD-Dog" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/alexis-palacio-ortiz-722949204/" target="_blank"
-                  rel="noopener noreferrer" aria-label="LinkedIn">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
+          <div class="project-info">
+            <h3 class="project-title">Technical Test (Frontend)</h3>
+            <p class="project-description">Responsive interface to visualize, filter and manage people data from
+              JSON.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- Pie de página -->
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <div class="footer-about">
-              <h3>Alexis Palacio</h3>
-              <p>Alexis Palacio | Frontend Developer | HTML, CSS, JavaScript & Shopify</p>
-            </div>
-
-            <div class="footer-links">
-              <h3>Services</h3>
-              <ul>
-                <li><a href="#skills">Shopify Development</a></li>
-                <li><a href="#skills">Custom Frontend</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-contact">
-              <h3>Contact</h3>
-              <ul>
-                <li><i class="fas fa-envelope"></i> alexis26-93@live.com</li>
-                <li><i class="fab fa-github"></i> PoisoneD-Dog</li>
-              </ul>
+         <!-- Proyecto Shopify -->
+        <div class="project-card animate fade-in delay-1" data-category="shopify">
+          <div class="project-img">
+            <img src="assets/image/ganjadrop.png" alt="Shopify Store" loading="lazy">
+            <div class="project-links">
+              <!-- <a href="https://ganjaprime.myshopify.com" class="project-link" target="_blank" -->
+              <!-- aria-label="View project"><i class="fas fa-eye"></i></a> -->
+              <a href="https://github.com/PoisoneD-Dog/ganjadrop-myshopify" class="project-link" target="_blank"
+                aria-label="View code"><i class="fab fa-github"></i></a>
             </div>
           </div>
-
-          <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> Alexis Palacio. All Rights Reserved.</p>
+          <div class="project-info">
+            <h3 class="project-title">Fashion Shopify Store</h3>
+            <p class="project-description">Custom Shopify theme development with liquid templates and AJAX cart.</p>
+            <div class="project-tags">
+              <span class="tag">Shopify</span>
+              <span class="tag">Liquid</span>
+              <span class="tag">JavaScript</span>
+            </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </div>
+  </section>
 
-      <!-- Scripts -->
-      <script src="scripts.js"></script>
+  <section class="current-work-section animate fade-in delay-1">
+    <h2 class="section-title glitch" data-text="Currently Working On">Currently Working On</h2>
 
-      <!-- External JS script -->
-      <script src="scripts.js"></script>
+    <div class="current-project-grid">
+      <!-- Clicker Game Project -->
+      <div class="project-card animate fade-in delay-2" data-category="frontend">
+        <div class="project-img">
+          <img src="assets/image/clickerGame.png" alt="Clicker Game" loading="lazy">
+          <div class="project-links">
+            <a href="https://poisoned-dog.github.io/clickerGame/" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+              <i class="fas fa-eye"></i>
+            </a>
+            <a href="https://github.com/PoisoneD-Dog/clickerGame" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Code">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Meat Factory Clicker Game</h3>
+          <p class="project-description">A grotesque incremental clicker game with power-ups and animated meat sprites.</p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Canvas</span>
+            <span class="tag">Game Design</span>
+          </div>
+        </div>
+      </div>
 
-      <!-- Floating Back to Top Button -->
-      <a href="#" class="back-to-top" id="back-to-top">
-        <i class="fas fa-chevron-up"></i> <!-- Up arrow icon -->
-      </a>
+      <!-- Poisoned Merch Project -->
+      <div class="project-card animate fade-in delay-2" data-category="frontend">
+        <div class="project-img">
+          <img src="assets/image/poison-march.png" alt="Poisoned Merch Store" loading="lazy">
+          <div class="project-links">
+            <!-- <a href="https://poisoned-dog.github.io/poisoned-merch/" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"> -->
+            <!-- <i class="fas fa-eye"></i> -->
+            </a>
+            <a href="https://github.com/PoisoneD-Dog/poisoned-merch" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Code">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Poisoned Merch Store</h3>
+          <p class="project-description">Custom Shopify store for glitch/dark themed music merch. Full theme redesign using Dawn base.</p>
+          <div class="project-tags">
+            <span class="tag">Shopify</span>
+            <span class="tag">Liquid</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <!-- Button to scroll to top -->
-      <a href="#" class="scroll-to-top">
+    <p class="project-status-text">
+      If you catch me active on GitHub, it's because I'm sharpening my frontend skills,
+      writing code while listening to glitchcore and fighting bugs like a poisoned dog.
+    </p>
+  </section>
 
-      </a>
-      <script>
-        const cvLink = document.getElementById("cv-link");
 
-        function updateCVLink() {
-          const isSpanish = document.documentElement.lang === "es";
-          if (isSpanish) {
-            cvLink.href = "/portfolio/assets/cv/CV-AlexisPalacio-ES.pdf";
-          } else {
-            cvLink.href = "/portfolio/assets/cv/CV-AlexisPalacio-EN.pdf";
+  <!-- Sección de Contacto -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">I'm ready to contribute to your next project</p>
+      </div>
 
-          }
-        }
+      <div class="contact-content">
 
-        // Ejecutar la función al cargar la página
-        updateCVLink();
-      </script>
+
+        <form action="https://formsubmit.co/alexis26-93@live.com" method="POST" class="contact-form">
+          <input type="text" name="name" placeholder="Name" required class="input-field">
+          <input type="email" name="email" placeholder="Email" required class="input-field">
+          <textarea name="message" placeholder="Message" required class="textarea-field"></textarea>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://PoisoneD-Dog.github.io/portfolio/gracias.html">
+
+          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        </form>
+
+
+
+        <div class="contact-info animate slide-in-right">
+          <h3>Hire Me For</h3>
+          <ul class="expertise-list">
+            <li><i class="fas fa-check"></i> Custom Shopify Themes</li>
+            <li><i class="fas fa-check"></i> Frontend Optimization</li>
+            <li><i class="fas fa-check"></i> E-commerce Solutions</li>
+          </ul>
+
+          <div class="social-links">
+            <a href="https://github.com/PoisoneD-Dog" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/alexis-palacio-ortiz-722949204/" target="_blank"
+              rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>Alexis Palacio</h3>
+          <p>Alexis Palacio | Frontend Developer | HTML, CSS, JavaScript & Shopify</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#skills">Shopify Development</a></li>
+            <li><a href="#skills">Custom Frontend</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <ul>
+            <li><i class="fas fa-envelope"></i> alexis26-93@live.com</li>
+            <li><i class="fab fa-github"></i> PoisoneD-Dog</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Alexis Palacio. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
+
+  <!-- Floating Back to Top Button -->
+  <a href="#" class="back-to-top" id="back-to-top">
+    <i class="fas fa-chevron-up"></i> <!-- Up arrow icon -->
+  </a>
+
+
+  </a>
+  <script>
+    const cvLink = document.getElementById("cv-link");
+
+    function updateCVLink() {
+      const isSpanish = document.documentElement.lang === "es";
+      if (isSpanish) {
+        cvLink.href = "/portfolio/assets/cv/CV-AlexisPalacio-ES.pdf";
+      } else {
+        cvLink.href = "/portfolio/assets/cv/CV-AlexisPalacio-EN.pdf";
+
+      }
+    }
+
+    // Ejecutar la función al cargar la página
+    updateCVLink();
+  </script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 
 </body>

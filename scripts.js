@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // VARIABLES
   // ----------------------------
   const header = document.getElementById("header");
-  const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
-  const navList = document.querySelector(".nav-list");
   const backToTopBtn = document.getElementById("back-to-top");
   const projectFilterBtns = document.querySelectorAll(".filter-btn");
   const projectCards = document.querySelectorAll(".project-card");
@@ -15,29 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const enButton = document.getElementById("en-flag");
 
 
-  // ----------------------------
-  // MENÚ MÓVIL
-  // ----------------------------
-  function toggleMobileMenu() {
-    navList.classList.toggle("active");
-    mobileMenuBtn.setAttribute(
-      "aria-expanded",
-      navList.classList.contains("active")
-    );
 
-    mobileMenuBtn.classList.toggle("active-icon");
-  }
-
-  mobileMenuBtn.addEventListener("click", toggleMobileMenu);
-
-  document.querySelectorAll(".nav-link").forEach((link) => {
-    link.addEventListener("click", () => {
-      if (navList.classList.contains("active")) {
-        toggleMobileMenu();
-      }
-    });
-  });
-
+  
   // ----------------------------
   // SCROLL HEADER Y BACK TO TOP
   // ----------------------------
