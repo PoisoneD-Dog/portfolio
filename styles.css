@@ -292,8 +292,6 @@ textarea:focus,
   width: 60%;
 }
 
-
-
 /* =============================================
     SECCIÓN HERO
     ============================================= */
@@ -533,9 +531,13 @@ textarea:focus,
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  justify-content: center;
+  max-width: 1000px; /* limita el ancho total del grid */
+  margin: 0 auto;     /* centra horizontalmente */
 }
+
 
 .project-card {
   width: 100%;
@@ -546,6 +548,7 @@ textarea:focus,
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 255, 0, 0.15);
   transition: transform 0.2s ease;
+  margin: 0 auto;
 }
 
 .project-img {
