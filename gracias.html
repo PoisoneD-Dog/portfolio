@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You</title>
+    <meta name="description" content="Thank you page for Alexis Palacio, Shopify and frontend developer">
+    <meta name="keywords" content="Frontend Developer, Shopify Developer">
+    <link rel="canonical" href="https://poisoned-dog.github.io/portfolio/gracias.html">
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -54,25 +57,31 @@
         <p id="gracias-parrafo">I have received your information and will get back to you soon.</p>
         <a id="gracias-boton" href="index.html">Return to Home</a>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const idioma = localStorage.getItem("idioma");
-            const titulo = document.getElementById("gracias-titulo");
-            const parrafo = document.getElementById("gracias-parrafo");
-            const boton = document.getElementById("gracias-boton");
+    
 
-            if (idioma === "es") {
-                titulo.textContent = "¡Gracias por tu mensaje!";
-                parrafo.textContent = "He recibido tu información y me pondré en contacto contigo pronto.";
-                boton.textContent = "Volver al Inicio";
-            } else {
-                titulo.textContent = "Thank you for your message!";
-                parrafo.textContent = "I have received your information and will get back to you soon.";
-                boton.textContent = "Return to Home";
-            }
-        });
-    </script>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function(){
+      const theme = localStorage.getItem('theme') || 'dark';
+      $('html').attr('data-theme', theme);
+      if(localStorage.getItem('colorblind') === 'true'){
+        $('html').attr('data-colorblind','true');
+      }
+      const idioma = localStorage.getItem("idioma");
+      const $titulo = $("#gracias-titulo");
+      const $parrafo = $("#gracias-parrafo");
+      const $boton = $("#gracias-boton");
+      if(idioma === "es"){
+        $titulo.text("¡Gracias por tu mensaje!");
+        $parrafo.text("He recibido tu información y me pondré en contacto contigo pronto.");
+        $boton.text("Volver al Inicio");
+      } else {
+        $titulo.text("Thank you for your message!");
+        $parrafo.text("I have received your information and will get back to you soon.");
+        $boton.text("Return to Home");
+      }
+    });
+  </script>
 </body>
 
 </html>
