@@ -24,6 +24,7 @@
   --text-muted: #cccccc;
   --border-color: #333333;
   --color-accent: #00aaff;
+  --header-color: rgba(15, 15, 15, 0.9);
 
   /* Sombras */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -46,9 +47,10 @@
   --dark-bg: #ffffff;
   --darker-bg: #f0f0f0;
   --light-bg: #fafafa;
-  --text-color: #111111;
-  --text-muted: #555555;
+  --text-color: #000000;
+  --text-muted: #262626;
   --border-color: #dddddd;
+  --header-color: rgba(255, 255, 255, 0.9);
 }
 
 [data-colorblind="true"] {
@@ -229,7 +231,7 @@ textarea:focus,
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(15, 15, 15, 0.9);
+  color: var(--header-color);
   backdrop-filter: blur(10px);
   z-index: 1000;
   transition: all var(--transition-normal);
@@ -237,8 +239,9 @@ textarea:focus,
 }
 
 .header.scrolled {
-  background-color: rgba(10, 10, 10, 0.98);
+  color: var(--header-color);
   box-shadow: var(--shadow-md);
+  margin-top: 0vh;
 }
 
 .header .container {
@@ -535,9 +538,8 @@ textarea:focus,
   gap: 2rem;
   justify-content: center;
   max-width: 1000px; /* limita el ancho total del grid */
-  margin: 0 auto;     /* centra horizontalmente */
+  margin: 0 auto; /* centra horizontalmente */
 }
-
 
 .project-card {
   width: 100%;
