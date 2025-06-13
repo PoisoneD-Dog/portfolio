@@ -24,6 +24,7 @@
   --text-muted: #cccccc;
   --border-color: #333333;
   --color-accent: #00aaff;
+  --header-color: rgba(15, 15, 15, 0.9);
 
   /* Sombras */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -40,6 +41,21 @@
   --border-radius-md: 8px;
   --border-radius-lg: 16px;
   --border-radius-full: 9999px;
+}
+
+[data-theme="light"] {
+  --dark-bg: #ffffff;
+  --darker-bg: #f0f0f0;
+  --light-bg: #fafafa;
+  --text-color: #000000;
+  --text-muted: #262626;
+  --border-color: #dddddd;
+  --header-color: rgba(255, 255, 255, 0.9);
+}
+
+[data-colorblind="true"] {
+  --primary-color: #ffb000;
+  --primary-dark: #cc8500;
 }
 
 /* =============================================
@@ -215,7 +231,7 @@ textarea:focus,
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(15, 15, 15, 0.9);
+  color: var(--header-color);
   backdrop-filter: blur(10px);
   z-index: 1000;
   transition: all var(--transition-normal);
@@ -223,8 +239,9 @@ textarea:focus,
 }
 
 .header.scrolled {
-  background-color: rgba(10, 10, 10, 0.98);
+  color: var(--header-color);
   box-shadow: var(--shadow-md);
+  margin-top: 0vh;
 }
 
 .header .container {
@@ -277,8 +294,6 @@ textarea:focus,
 .nav-link:focus::after {
   width: 60%;
 }
-
-
 
 /* =============================================
     SECCIÓN HERO
@@ -519,18 +534,23 @@ textarea:focus,
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  justify-content: center;
+  max-width: 1000px; /* limita el ancho total del grid */
+  margin: 0 auto; /* centra horizontalmente */
 }
 
 .project-card {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   background: #111;
   border: 1px solid var(--color-accent);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 255, 0, 0.15);
   transition: transform 0.2s ease;
+  margin: 0 auto;
 }
 
 .project-img {
@@ -620,6 +640,24 @@ textarea:focus,
 .tag:hover {
   background-color: var(--primary-color);
   color: white;
+}
+
+/* =============================================
+    ACCESORIOS DE ACCESIBILIDAD
+    ============================================= */
+#theme-toggle,
+#cb-toggle {
+  background: none;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: var(--border-radius-full);
+  padding: 0.3rem 0.6rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+#theme-toggle i {
+  pointer-events: none;
 }
 
 /* =============================================

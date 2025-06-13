@@ -8,7 +8,9 @@
   <!-- Metadatos básicos -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio profesional de Alexis Palacio, desarrollador Frontend">
+  <meta name="description" content="Portfolio profesional de Alexis Palacio, desarrollador Frontend y experto en Shopify">
+  <meta name="keywords" content="Frontend Developer, Shopify Developer, Web Developer, E-commerce">
+  <meta name="robots" content="index, follow">
   <title>Alexis Palacio | Frontend Developer</title>
 
   <!-- Preconexión para mejorar el rendimiento -->
@@ -23,6 +25,10 @@
 
   <!-- Iconos de Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="canonical" href="https://poisoned-dog.github.io/portfolio/">
+  <meta property="og:title" content="Alexis Palacio | Frontend & Shopify Developer">
+  <meta property="og:description" content="Desarrollador especializado en Shopify y Frontend.">
+  <meta property="og:type" content="website">
 
 </head>
 
@@ -32,8 +38,9 @@
     <div class="container">
       <a href="#home" class="logo">Alexis Palacio</a>
       <div class="language-switcher">
-        <img id="es-flag" style="cursor:pointer; width: 32px;">
-        <img id="en-flag" style="cursor:pointer; width: 32px;">
+        
+        <button id="theme-toggle" aria-label="Toggle light or dark theme"><i class="fas fa-adjust"></i></button>
+        <button id="cb-toggle" aria-label="Toggle colorblind mode">CB</button>
       </div>
 
       <nav class="nav" aria-label="Main navigation">
@@ -44,12 +51,6 @@
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-
-
-
-      <!-- <button class="mobile-menu-btn" aria-label="Toggle navigation">
-        
-      </button> -->
     </div>
 
 
@@ -425,6 +426,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="scripts.js"></script>
 
   <!-- Floating Back to Top Button -->
@@ -432,27 +434,6 @@
     <i class="fas fa-chevron-up"></i> <!-- Up arrow icon -->
   </a>
 
-
-  </a>
-  <script>
-    const cvLink = document.getElementById("cv-link");
-
-    function updateCVLink() {
-      const isSpanish = document.documentElement.lang === "es";
-      if (isSpanish) {
-        cvLink.href = "/portfolio/assets/cv/CV-AlexisPalacio-ES.pdf";
-      } else {
-        cvLink.href = "/portfolio/assets/cv/CV-AlexisPalacio-EN.pdf";
-
-      }
-    }
-
-    // Ejecutar la función al cargar la página
-    updateCVLink();
-  </script>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 
 
 </body>

@@ -30,11 +30,3 @@ El sitio presenta una navegación clara, animaciones ligeras y un formulario de 
 - Se implementaron animaciones solo cuando el elemento entra en viewport usando Intersection Observer, evitando impacto en el rendimiento por scroll listeners pesados.
 - Mobile-first design para garantizar compatibilidad con pantallas pequeñas.
 
-## 🌱 Siguientes mejoras sugeridas
-- Minificación de CSS y JS para entornos de producción.
-- Implementar `apple-touch-icon` y `manifest.json` para mejorar compatibilidad en dispositivos Apple y Android.
-- Considerar integrar Google Analytics o una alternativa privacy-friendly.
-- Agregar soporte para idioma inglés si se espera una audiencia internacional.
-
-## 👨‍💻 Nota para entrevistas
-Este portafolio refleja no solo habilidades técnicas en HTML/CSS/JS, sino también enfoque en accesibilidad, rendimiento y buenas prácticas modernas.
